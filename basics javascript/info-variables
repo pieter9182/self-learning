@@ -1,0 +1,121 @@
+VARIABLES
+
+a variable is a named storage for data .
+YOU CAN STORE GOODIES,VISITORDS AND OTHER DATA.
+to create a variable in javascript use let.
+ 
+exemple1 = 
+
+let message = 
+message = "Hello"; // store the string "hello" in the variable named message
+
+alert(message); //shows the variable content
+
+exemple2 = 
+let message = "Hello"; // define the variable and assing the value
+
+alert(message); //shows the variable content
+
+<----------------------------------------------------------->
+
+declare multiple variables in one line 
+
+exemple1 beginning =
+
+let user = "john", age = 25, message = "hello";
+
+exemple2 more readable =
+
+let user = "john";
+let age = 25;
+let message = "hello";
+<----------------------------------------------------------->
+
+in older scripts you may also find another keyword: var instead of let:
+
+var message = "hello";
+
+<----------------------------------------------------------->
+A REAL-LIFE ANALOGY
+
+inmagine a variable as a box with a yniquely-named sticker on it for an easyer referance,
+for instance, the variable message can be inmagined as a box labbeled "message" with the value "hello" in it.
+
+we can also change it as many times as we want:
+
+example1 =
+
+let message:
+
+message = "hello";
+
+message = "world"; // value changed
+
+alert(message);
+
+when the value is changed, the old data is removed from the variable.
+
+we can also declare two variables an copy data from on into the other.
+
+exemple1 =
+
+let hello = "Hello world";
+
+let message 
+
+// copy "hello world" from hello into message
+message = hello;
+
+// now tho variables hold the same data
+alter(hello);
+alter(message);
+
+<----------------------------------------------------------->
+VARIABLE NAMING
+
+there are two limitations on variable names in javascript:
+
+1. the name must contain only letters, digits, or the symboles $ and _.
+2. the first character must not be a digit.
+
+exemples of valid names = 
+
+let userName;
+let test123l
+
+if you use more then 1 word begin every new word with a cap-ital letter.
+
+exemples of this rule =
+
+1.javascript
+2.myVeryLongName
+3.yourLastName
+
+the signs $ and _ can also be used in names so they are valid.
+
+exemple1 
+
+let $ = 1;// declare a variable with the name "$"
+let _ = 2;// and now a variable with the name "_"
+
+allert($+_); // = 3
+
+incorrect exemple1 =
+
+let 1a; // cannot start with digit
+
+let my-name; // hyphens "-" aren't allowed in the name
+
+<----------------------------------------------------------->
+
+these are names you cannot use as a variable because they are already being used in the lenguage itself
+
+exemples =
+
+let let = 5; // can't name a variable "let", error!
+let return = 5;// also can't name it "return", error!
+
+<----------------------------------------------------------->
+CONSTANTS
+
+to declare a constant (unchanging)
